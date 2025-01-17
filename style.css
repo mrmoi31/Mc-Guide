@@ -3,12 +3,15 @@ body{
 	color: whitesmoke;
 }
 
+a, a:visited {
+	text-decoration: none;
+	color: lightblue;
+}
+
 header { order: -1; width: 100%; }
 .parent-header { display: flex; flex-direction: column; position: relative; }
 .parent-footer { display: flex; flex-direction: column; position: relative; }
 footer { order: 1; width: 100%; }
-nav > *:not(:last-child) { text-decoration: var(--deco); border-right: solid 1px var(--color); padding-right: var(--padding); padding-left: var(--padding);} 
-nav > *:last-child { text-decoration: var(--deco); padding-left: var(--padding);}
 
 /****************/
 /*****NAV BAR****/
@@ -22,7 +25,7 @@ nav > *:last-child { text-decoration: var(--deco); padding-left: var(--padding);
 	margin-top: 1%;
 }
 
-a, a:visited {
+nav a, nav a:visited {
 	color: #023e8a;
 	text-decoration: none;
 }
