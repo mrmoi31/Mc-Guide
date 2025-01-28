@@ -8,23 +8,32 @@
 	
 	<body>
 		<header class="parent-header">
-			<header class="container">
+			<header>
 				<nav>
-					<ul>
-						<li> <a href="#Overworld">Overworld</a></li>
-						<li> <a href="#Nether">Nether</a></li>
-						<li> <a href="#End">End</a></li>
-					</ul>
+					<a href="#Overworld">Overworld</a>
+					<a href="#Nether">Nether</a>
+					<a href="#End">End</a>
 				</nav>
 			</header>
 		</header>
 	
 		<main>
+			<hr>
 			<div id="Overworld">
-				<h1>Overworld</h1>
+				<h1 class="center">Overworld</h1>
 				<nav>
 					<a href="#Buried">Buried Treasure</a>
 					<a href="#Diamonds">Diamonds and Clay</a>
+					<a href="#Ancient">Ancient City</a>
+					<a href="#Village">Villages</a>
+					<a href="#Mineshaft">Mineshafts</a>
+					<a href="#Pyramid">Pyramid Temple</a>
+					<a href="#Shipwreck">Shipwrecks/Ocean Ruins</a>
+					<a href="#Spawner">Spawners</a>
+					<a href="#Monument">Ocean Monument</a>
+					<a href="#Woodland">Woodland Mansion</a>
+					<a href="#Pillager">Pillager Outpost</a>
+					<a href="#Igloo">Igloo</a>
 				</nav>
 
 				<h2 id="Buried">Buried Treasure</h2> 
@@ -43,421 +52,124 @@
 					<li>2 blocks north in river biomes (5 - 7 tests)</li>
 					<li>8 blocks north in swamp biomes( 10 - 11 tests)</li>
 				</ul>
+
+				<h2 id="Ancient">Ancient City</h2>
+				Ancient City commonly under mountains always -52 y axis
+
+				<h2 id="Village">Villages</h2>
+				Create your own village, a door and a floor is a house
+				Find one, most commons along rivers in Plains, Snowy Plains, Meadow, Desert, Savanna, Taiga or Snowy Taiga
+
+				<h2 id="Mineshaft">Mineshafts</h2>
+				Mineshafts between Y 30-50 in any biome with 4-5 chests average (but can be 0)
+
+				<h2 id="Pyramid">Pyramid Temple</h2>
+				Pyramid temple Y = 64 in desert
+
+				<h2 id="Shipwreck">Shipwrecks/Ocean Ruins</h2>
+				Shipwreck all ocean biomes, snowy beach, beach and 1-3 chests (depend the damage of the structure)<br><br>
+
+				30% of ocean ruins generate as large ocean ruins; the other 70% generate as small ruins.<br>
+				If the ocean ruin is large, there is a 90% chance for 4-8 (inclusive) small ocean ruins to generate around it in a cluster.<br>
+				If the ocean ruin is warm, large ocean ruins generate with a structure integrity of 0.9 and small ocean ruins generate with a structure integrity of 0.8.<br>
+				If the ocean ruin is cold, the "brick" variant of the chosen structure type generates with a structure integrity of 0.9 if large and 0.8 if small.<br>
+				The "cracked" variant generates with a structure integrity of 0.7, and the "mossy" variant generates with a structure integrity of 0.5, both regardless of size. <br>
+				Reduced structure integrity may also remove drowned and loot chests from the structures.<br>
+
+				<h2 id="Spawner">Spawners</h2>
+				Easiest way to exploit spawner
+				<div class="center"><img src="./ressources/spawner.jpg"></div>
+				
+				<h2 id="Monument">Ocean Monument</h2>
+				Ocean monuments generate in areas with deep ocean biome variants everywhere within a 16 block square radius around the center point, and an aquatic biome (regular/deep/frozen ocean, regular/frozen river) everywhere within a 29 block square radius around the center point. In order to prevent air pockets, water generates around the monument as a part of the structure. The four blocks in the exact middle always generate each in a different chunk. It is the largest structure that does not contain a loot chest and the largest water structure. An ocean monument can also overwrite other structures like strongholds during generation. A maximum of one ocean monument may generate in every 512×512 block area.<br>
+				Ocean monuments always contain three elder guardians – one at the top and one in each wing.
+				<br>
+				The monument is constructed entirely from variants of prismarine and lit by sea lanterns. It includes a large central section flanked by two wings. Under the monument are 23 giant pillars that stretch to the ocean floor. The main entrance is located at the front of the central section. The base size of the structure is 58×58 blocks. Thus, the ocean monument (the location where guardians and elder guardians spawn) area is 3,364 square blocks.
+				<br>
+				The central section consists of various types of chambers. The chambers are randomly generated; each monument has a different number of rooms (at least six) arranged in a unique manner. The chambers connect vertically and horizontally to the different parts of the monument, including the left and right wings. At the topmost room resides an elder guardian. Around the center of the central section lies the treasure chamber, a tall room with eight blocks of gold encased in dark prismarine.
+				<br>
+				Occasionally, monuments contain one or more rooms with approximately 30 wet sponges on the ceiling. Sponge rooms have an opening only in the floor. Ocean monuments are not guaranteed to generate sponge rooms.
+				<br>
+				One of the wings contains a large room with a small pillar at the center. The room contains a second elder guardian. The other wing consists of a large open space with a large, square-shaped platform, containing another elder guardian. A long hallway that arcs around the wings and the back portion of the monument connects the two wings together.
+
+				<h2 id="Woodland">Woodland Mansion</h2>
+				A woodland mansion is a massive systematically-generated structure found in dark forests, often far away from the world spawn point. A mansion is inhabited by evokers, vindicators and allays, and is one of the only places where a totem of undying can be obtained. Besides illagers, a mansion's interior lighting is sufficiently low for other Overworld monsters to spawn. Woodland mansions can only spawn every 20,000 to 10,000 blocks. Some seeds allow mansions to spawn at 1000 - 300 blocks away (1 in 10 million chance of finding one closer than 1000 blocks) <br>
+				The first floor of the mansion may only generate rooms that contain vindicators; from the second floor upward, some large rooms may contain both evokers and vindicators. Neither type of illager spawns directly in the hallways of the mansion, but they often wander into the hallways after spawning in.<br>
+				A woodland mansion naturally generates vindicators, evokers, and allays inside the mansion, but because the entrance is open and most rooms in the woodland mansion are dark, Overworld monsters sometimes spawn in these rooms or come in through the entrance at night.<br>
+
+				<h3>Diamond rooms</h3>
+				A secret room with an octahedron-shaped mass of obsidian concealing a block of diamond within. These rooms can generate on any floor. <br>
+				A secret room containing a lava-filled glass case supported by large obsidian foundations on the floor and ceiling. Hidden within the glass case is a block of diamond. These rooms can generate on any floor.<br>
+
+				<h2 id="Pillager">Pillager Outpost</h2>
+				Pillager outposts are semi-rare structures, generating every several hundred to couple thousand blocks. This makes them rarer than villages but less rare than woodland mansions.<br>
+				Pillager outposts can generate naturally in any village-generating biome, including: Plains, Desert, Savanna, Taiga, Snowy Plains, Meadow<br>
+				Also generate in the following biomes, where villages do not spawn: Grove, Snowy Slopes, Jagged Peaks, Frozen Peaks, Stony Peaks, Cherry Grove
+
+				<h2 id="Igloo">Igloo</h2>
+				You can find them in Snowy Tundras or Snowy Taigas, but you cannot find them in Ice Spikes, Snowy Mountains, or Snowy Taiga Hills. Keep your eyes peeled for an out of place rise of snow to spot igloos. Only half of them have a basement.
 				</p>
 			</div>
 			<hr>
 			<div id="Nether">
-				<h1>Nether</h1>
+				<h1 class="center">Nether</h1>
 				<nav>
-					<a href="#Overworld">Overworld</a>
-					<a href="#Overworld">Overworld</a>
+					<a href="#Fortress">Nether Fortress</a>
+					<a href="#Bastion">Bastions</a>
 				</nav>
 
+				<h2 id="Fortress">Nether Fortress</h2>
+
+				<p>Nether Fortresses can be found scattered across the Nether in Minecraft, their 		spawning isn't entirely random. Nether Fortresses are more likely to spawn on the 			positive side of the X-axis, therefore moving north or south while keeping the X-axis 		positive is the best way to search for them. 
+				</p>
+
+				<div class="center"><img src="./ressources/nether_fortresse_map.png"></div>
+				<p class="center">One structure per region, either bastion or fortress</p>
+
 				<h2 id="Bastion">Bastion Routing</h2>
-				<p>Bastion Looting Guide (1.16.2+)
-				<ul>List of contents
-					<li><a href="#1">What are bastions and how to find them?</a></li>
-					<li><a href="#2">Why bother and what is the loot?</a></li>
-					<li><a href="#3">What are the dangers and how to deal with them?</a></li>
-					<li><a href="#4">How to prepare, what to take?</a></li>
-					<li><a href="#5">Bastion types – in-depth description</a>
-						<ul>
-							<li><a href="#Bridge">Bridge</a></li>
-							<li><a href="#Stables">Hoglin Stables</a></li>
-							<li><a href="#Housing">Housing Units</a></li>
-							<li><a href="#Treasure">Treasure Room</a></li>
-						</ul>
-					</li>
-					<li><a href="#6">Miscellaneous data</a></li>
-				</ul>
+
+				<nav>
+					<a href="#1">Location</a>
+					<a href="#2">Loot</a>
+					<a href="#3">Miscellaneous data</a>
+					<a href="#4">Bastion types</a>
+				</nav>
+				<br>
+				<nav>
+					<a href="#Bridge">Bridge</a>
+					<a href="#Stables">Hoglin Stables</a>
+					<a href="#Housing">Housing Units</a>
+					<a href="#Treasure">Treasure Room</a>
+				</nav>
+				
 				<h3 id="1">1. What are bastions and how to find them?</h3>
-				Bastions (or, more precisely, bastion remnants) are huge structures found in the Nether, made primarily out of blackstone and blackstone bricks. The mobs that can be found inside are mainly piglins, piglin brutes and hoglins, but occasionally you can find mobs specific to the Nether biome that the bastion is located in (zombified piglins, skeletons, Endermen, magma cubes).
+				<p>Bastions remnants are huge structures found in the Nether, made primarily out of blackstone and blackstone bricks.<br>
 
-				Bastions can spawn in every biome except basalt deltas. However, if even a tiny part of the structure is located in a valid biome, then the rest can be inside of a basalt delta (and that can be a huge pain in the ass, believe me).
+				Bastions can spawn in every biome except basalt deltas.<br>
 
-				The best way to locate a bastion is to use a seed map app on ChunkBase. You can also just fly/run around the nether randomly, but it’s not very effective – it’s dangerous, takes a lot of time and bastions are often covered in netherrack (or similar blocks), so they can be difficult to find.
-
-				Navigating the Nether is a pretty miserable experience and I’m not talking about the abundance of lava and aggressive mobs. I’m talking about the uneven terrain - dead ends, hills and ravines. I strongly recommend an elytra with some fireworks. If you don’t have it yet, then a saddled strider with a warped fungus on a stick works pretty well on these large lava lakes. For the less favorable terrain, have a lot of blocks for ravines and a good pickaxe for dead ends, so you can tunnel through netherrack quickly.
+				You can fly/run around the nether randomly, but it’s not very effective – it’s dangerous, takes a lot of time and bastions are often covered in netherrack (or similar blocks), so they can be difficult to find.<br>
 
 				<h3 id="2">2. Why bother and what is the loot?</h3>
 				There are some thing that can only be found in bastion remnants, but there are also some things that bastions are (one of) the best source of.<br>
 				These things are:<br>
 
-				a) Netherite (ancient debris, netherite scraps, netherite ingots) – in my opinion, bastions are the best source of netherite. Sure, you can just go mining, but it’s incredibly tedious and doesn’t give you that much ancient debris (unless you’re very lucky or you’ve built a World Eater or something). On average, I’ve found roughly 2 ancient debris / netherite scraps per bastion.<br>
+				a) Netherite (ancient debris, netherite scraps, netherite ingots). On average, 2 ancient debris / netherite scraps per bastion.<br>
 
-				b) Soul Speed enchantment – it’s amazing if you build some roads made of soul sand/soul soil (they can be covered with slabs to look better), you can move extremely fast on them with Soul Speed III. Fast travel in Soul Sand Valleys is also very good, although using an elytra is even faster<br>
+				b) Soul Speed enchantment<br>
 
-				c) Gold – it might not be very useful in Minecraft, but gold can be used for trading/bartering, decoration or just collecting for fun. Bastions contain A LOT of gold.<br>
+				c) Gold. It can be used for trading/bartering, decoration or just collecting for fun. Bastions contain A LOT of gold.<br>
 
 				d) Blackstone and its variants – blackstone, polished blackstone and blackstone bricks are great building blocks<br>
 
-				e) Obsidian – very useful for large portals used in some farms. Yes, it can be quite easily farmed automatically with the wither, but getting enough wither skeleton skulls can be problematic. Crying obsidian can be used for respawn anchors and decoration<br>
+				e) Obsidian – very useful for large portals used in some farms. Crying obsidian can be used for respawn anchors and decoration<br>
 
 				f) Bone blocks – a good source of bone meal<br>
 
 				g) Golden carrots – one of the best kinds of food in the game<br>
 
-				h) Enchanted diamond tools/gear – trading with villagers is easier, but you can get some cool, rare enchantments like Mending<br>
+				h) Enchanted diamond tools/gear<br>			
 
-				<h3 id="3">3. What are the dangers and how to deal with them?</h3>
-				<h4>a) Piglin brutes</h4>
-				The biggest danger while looting a bastion in 1.16.2+ is running into a piglin brute. These guys are fast, have a ton of health and hit like a truck. What’s worse, they attack on sight (not caring about the player’s gold armor), they are not afraid of anything and can’t be distracted by gold. If you hit them in close range, nearby piglins become aggressive, which could be problematic, to say the least.
-				<br>
-				Get familiar with piglin brutes’ look and sounds, it may save you one day. They can be distinguished from regular piglins by wearing black clothes with a big, gold belt buckle, having an arm guard and wielding an axe. The brutes’ sounds have a lower pitch than the sounds of regular piglins (you can listen to them on Minecraft Wiki). Turning the subtitles on is also an option, but having to read them can take your attention away at the worst possible time.
-				<br>
-				r/MinecraftTutorials - Piglin brute
-				Piglin brute
-				<br>
-				r/MinecraftTutorials - Regular piglin
-				<h5>Dealing with piglin brutes</h5>
-				The good thing about piglin brutes is that they spawn in (more or less) fixed locations, although they can wander a bit and tend to fall down holes, which may put them in spots that you don’t expect them to be in. Also, they don’t respawn, so if you kill all of them, the bastion is pretty safe to explore.
-				<br>
-				<h5>Best ways (in my opinion)</h5>
-				Bow/crossbow – shooting brutes from afar (over 16 blocks I think) won’t aggro them or regular piglins, even if they stand right next to you. Unfortunately, you probably won’t be able to kill all of them this way, because bastions are filled with all sorts of nooks and crannies.
-				<br>
-				Lava bucket – unlike the majority of Nether mobs, piglins, piglin brutes and hoglins are not immune to lava. It even “freezes” them in place, so placing some lava creates a defensive barrier as well. It’s very useful in close range, especially since it won’t aggro any mobs. Just be careful not to burn yourself as well – a strong Fire Protection enchantment is invaluable in this case, especially since lava flows much faster and further in the Nether. You can even drink a Fire Resistance potion beforehand, although it takes some additional inventory space.
-				<br>
-				<h5>Other ways</h5>
-				Axe/sword – appropriate only as a last resort, killing a healthy piglin brute in melee combat (even with a great weapon) is hard, especially in tight corridors. Making nearby piglins aggressive makes the fight even harder. Your shield will get disabled after being hit by an axe. Also, moving around too much during combat can make you fall down a hole, which are abundant in bastions. All in all, odds are not in your favor.
-				<br>
-				Boat – good in theory, it completely neutralizes the mob riding it. However, if you are in an open space, it’s usually better to use a bow/crossbow from afar. If you are in a closed space, there often isn’t any good spot to place a boat and try doing that while panicking during an ambush.
-				<br>
-				Trapping with blocks – tough to do, brutes are fast and have a decent pathfinding skill (although it’s very aggressive)
-				<br>
-				Pillaring up – if you can do it in time, then this will keep you relatively safe, unless a piglin shoots you with a crossbow or a ghast hurls a fireball at you. Also, you can’t really do it in tight corridors.
-				<br>
-				<h4>b) Hoglins</h4>
-				Aggressive and very annoying. They have a ton of health and can fling you with their attacks. At least you can freely attack them without the fear of aggravating nearby piglins. Use a ranged weapon from afar and axe/sword/lava bucket in short range.
-				<br>
-				<h4>c) Regular piglins</h4>
-				Won’t attack you on sight if you wear at least one piece of gold armor. Opening a chest/shulker box, mining a gold-related block or hitting them makes them aggressive. I recommend using a lava bucket and shooting them from afar, so they won’t get in the way. Pretty weak in low numbers.
-				<br>
-				<h4>d) Zombified piglins</h4>
-				These are neutral most of the time, but hit one by accident and you are in a world of pain. Try to hide out of their sight and wait a few minutes and they should calm down. Using a lava bucket might slow them down, but won’t hurt them.
-				<br>
-				<h4>e) Other mobs (ghasts, skeletons, Endermen, magma cubes)</h4>
-				These do not spawn often enough to be an issue. Kill nearby ghasts and skeletons with a bow or something. Use a lava bucket on Endermen, if they get in the way. Magma cubes are mostly just squishy and harmless.
-				<br>
-				<h4>f) Lava, falling, falling in lava</h4>
-				Be careful. Sneaking will help with all these holes. Swift Sneak will make sneaking faster. Fire Protection and Feather Falling enchantments will lessen the damage.
-				<br>
-				<h4>g) Getting lost</h4>
-				Use torches and blocks to leave marks and wall of dead ends. Maps with banners and F3 screen will help with navigation (Java Edition only).
-				<br>
-				<h3 id="4">4. How to prepare, what to take?</h3>
-				A lot depends on whether you have the “Keep inventory” rule turned on in your world or not. In general, if you keep your inventory after death, then you can take more valuable equipment.
-				<br>
-				<h5>Essentials</h5>
-				- some decent armor; preferably diamond or netherite, enchanted with Protection and Fire Protection. Feather Falling, Soul Speed and Swift Sneak are also great, if you have access to them. Enchanted diamond armor can be cheaply bought from villagers or found randomly
-				<br>
-				- a lava bucket, it can be used both offensively and defensively, killing mobs with lava counts as an “accident”
-				<br>
-				- a single piece of gold armor (preferably a helmet, due to it having the same armor rating as an iron one), so the regular piglins won’t attack you on sight
-				<br>
-				- a bow or a crossbow with some arrows (if you are not using the Infinity enchantment); I prefer to use a bow with Power V, Mending and Unbreaking, but Flame and Punch might be useful as well
-				<br>
-				- an axe or a sword; useful for killing hoglins, magma cubes, skeletons, etc. Diamond weapons can be bought cheaply from villagers or found randomly
-				<br>
-				- a shield, great to defend yourself against piglins with crossbows and skeletons
-				<br>
-				- some blocks for building bridges, pillars and blocking passages; I usually take a few stacks of netherrack, since it’s abundant, can be mined quickly and stands out among bastions’ blackstone variants
-				<br>
-				- solid food source, like golden carrots, steaks, cooked porkchops, or even golden apples
-				<br>
-				- a decent pickaxe
-				<br>
-				<h5>Optional</h5>
-				- respawn anchors with glowstone; if you don’t have a “Keep inventory” rule in your world, then I highly recommend using respawn anchors in safe spots near or in the bastions. Even the most experienced bastion looters can die due to some unfortunate circumstances. Getting to your dropped inventory in time will be hard enough without having to travel to the bastion from the Overworld.
-				<br>
-				- elytra with some fireworks; great at getting around the Nether and finding a suitable entry point. Losing an enchanted pair of elytra can be painful, though.
-				<br>
-				- maps and banners; useful for marking looted bastions and various points of interest
-				<br>
-				- shulker boxes; they make storing loot much easier
-				<br>
-				- Fire Resistance potions; great for handling lava
-				<br>
-				- other potions, like Invisibility, Night Vision, Regeneration, Strength, Swiftness, etc.
-				<br>
-				- a boat; useful for dropping down from great heights (if you don’t have elytra)
-				<br>
-				<h3 id="5">5. Bastion types – in-depth descriptions</h3>
-				<h4 id="Ramparts">Ramparts</h4>
-
-				Bridge, Hoglin Stables and Housing Units all contain two or three ramparts, that can spawn in three different variants – high, medium or low. Recognizing them can be difficult if they are buried under the netherrack and you have little idea about what you’re looking at. Just keep in mind that the high variant has a single chest and a double chest next to each other, the medium variant has a small pillar at the front and a squarish basalt pattern and the low variant has something like a line of basalt blocks in the middle.
-				<br>
-				r/MinecraftTutorials - High variant
-				High variant
-				<br>
-				r/MinecraftTutorials - Medium variant
-				Medium variant
-				<br>
-				r/MinecraftTutorials - Low variant
-				Low variant
-				<br>
-				<h5>Notes</h5>
-
-				Note 1: I highly recommend watching my Bastion Looting Route Guides, since it’s much easier to show the route than to describe it (I plan to post them here over the course of the next few weeks).
-				<br>
-				Note 2: The routes presented below are just my suggestions and may not be applicable to all cases, depending on the biome and whether the bastion is buried or not. Feel free to develop your own routes and be flexible, as there are a lot of variables.
-				<br>
-				Note 3: The positions of piglin brutes tend to vary somewhat, since they can travel a bit from their spawn point and often fall down to the areas below, due to all these holes present in the bastions. This can cause the brutes to appear in unexpected places. Don’t rush, be careful and listen to your surroundings.
-				<br>
-				Note 4: The maximum number of chests, gold blocks and piglin brutes is not super precise. I had to guesstimate some values, since I don’t have full data regarding bastion generation and piglin brutes have a chance to appear in bastion parts which also have a chance to be generated in different numbers. In general, high rolls presented below are either extremely rare or possible only in theory. Average and below average rolls are the most common results.
-				<br>
-				<h4 id="Bridge">A. Bridge</h4>
-				<h5>Overview</h5>
-
-				Bridge is a type of bastion that is relatively quick and easy to loot. There is a very low number of chests, but a high number of gold blocks and the main gold pile is in a very accessible and safe spot. There is one chest unique to this bastion. It’s called “lodestone chest”, since it always contains a single lodestone block (but nothing interesting apart from that).
-				<br>
-				r/MinecraftTutorials - Bridge
-				Bridge
-				<br>
-				<h5>Layout</h5>
-
-				The Bridge bastion type consist of a central area with a two-level bridge (surrounded by lava) and two ramparts, one on each side. The right rampart (looking at the front of the rampart’s chest) has a staircase that leads to the area with the lodestone chest. There are walkways that connect these ramparts to the central area, but there are no direct routes to get there from the main bridge. The ramparts can spawn as a high or medium variant – high with three chests, medium with just one. The vast majority of loot is in these two ramparts and on the upper part of the main bridge, there are only a few gold blocks in the lower area of this bastion. Overall, the layout is fairly simple and constant. The easiest way to tell this bastion type from the others is the presence of a big pile of gold at the end of the main bridge.
-
-				<h5>Loot</h5>
-
-				<h6>Average roll</h6>
-
-				Gold blocks – 16 (gold pile, guaranteed) + 1 (walkway) + 1 (lava cache) + 2 (lava passage) + 2 (lower right rampart) = 22
-				<br>
-				Chests – 3 generic (3 on high rampart) + 1 generic (on mid rampart) + 1 lodestone chest (guaranteed) = 5 (4 generic + 1 lodestone chest)
-
-				<h6>Low roll</h6>
-
-				Gold blocks – 16 (gold pile, guaranteed) + 1 (lower right rampart) = 17
-				<br>
-				Chests – 2 generic (2x1 on mid ramparts) + 1 lodestone chest (guaranteed) = 3
-
-				<h6>High roll</h6>
-
-				Gold blocks – 16 (gold pile, guaranteed) + 3 (walkway) + 3 (lava cache) + 2 (lava passage) + 3 (lower right rampart) = 27
-				<br>
-				Chests – 6 generic (2x3 on high ramparts) + 1 lodestone chest (guaranteed) = 7
-
-				<h5>Route</h5>
-
-				I recommend starting from the upper part of the main bridge area. There might be a hoglin or two and a bunch of piglins, but there shouldn’t be any piglin brutes. Mine the gold pile, go to the other end of the bridge, pillar up and try to shoot a piglin brute that patrols the upper area with the lodestone chest (there is 10% chance of a second brute spawning there). Pillar up somewhere in the center and bridge to one of the walkways. If there aren’t any brutes, mine through to the walkway and quickly block the passage to the rampart. Kill any nearby piglins with a lava bucket and carefully mine through to the rampart. If it’s a high rampart, shoot or burn any brutes with lava. If it’s a mid rampart, there is only 10% chance of a brute being there, so you can proceed a bit quicker. Loot the rampart and if you’ve gone to the right rampart (looking at the front of the rampart’s chest), you can go up the staircase to loot the lodestone chest as well. Go back to your bridge and loot the other rampart. After that, you’re pretty much done, but there are a few more optional gold blocks.
-
-				<h6>Lower right rampart (1-3 gold blocks)</h6>
-
-				Go to the right rampart, jump down its upper-left side and travel all the way down. Pass one lantern and go down the spiral path below the second lantern. There is a room with some chiseled blackstone with 1-3 gold blocks behind them.
-
-				<h6>Lava cache (0-3 gold blocks)</h6>
-
-				Go to the upper part of the main bridge, the end without the gold pile. Face the bastion and look to your left. There is some chiseled blackstone and up to 3 gold blocks behind the lava. Mining it is a bit tough, you should place some blocks around the gold beforehand, so it won’t burn in the lava.
-
-				<h6>Lava passage (0-2 gold blocks)</h6>
-
-				Jump to the lower part of the main bridge (watch out for piglin brutes, there might be at least one here). Look for a small lava waterfall (one block wide) and block it. This will reveal a secret passage. Go three blocks down (you should have blackstone bricks at your head level and blackstone blocks at your legs level) and mine through the wall on your left. You should quickly encounter up to 2 gold blocks with some chiseled blackstone around them.
-
-				<h5>Dangers</h5>
-
-				0-10 piglin brutes (4 on average), a couple of hoglins, lots of lava, some holes in the central bridge. Not too dangerous overall, as long as you’re careful.
-
-				<h4 id="Stables">B. Hoglin Stables</h4>
-				<h5>Overview</h5>
-
-				Hoglin Stables is the most varied bastion type. There are quite a lot of different possibilities in the spawning of its parts. That makes this bastion the most exciting, but also fairly difficult to loot. The reward can be either amazing or absolute garbage. Also, if this bastion happens to be completely buried under the netherrack, may your god have mercy on your soul. Navigation is going to be a nightmare.
-				<br>
-				r/MinecraftTutorials - Hoglin Stables, high-low-low variant
-				Hoglin Stables, high-low-low variant
-				<h5>Layout</h5>
-
-				Hoglin Stables bastion type consist of a lower and an upper section. The upper section is made of three ramparts and the upper parts of these ramparts can spawn in three different variants – high, medium or low. High has three chests with loot and four gold blocks in the room below the chests, medium has two chests (one is hidden on top, the second is below, near a lantern) and low has just one chest, in the back. The lower parts of these ramparts can also spawn in three different variants, but the middle one always spawns with a single chest and a staircase that leads to the main part of the stables. The other two variants are a room with a single chest and a bunch of chiseled blackstone blocks (the “fake gold room”, since despite its appearance, it doesn’t have any gold blocks) and a room with a hidden cache of gold blocks (the “gold room”).
-				<br>
-				The lower section of this bastion consist of four “floors” with some pillars in the middle. There are two ruined staircases that can be used to travel between these floors. There is often some lava at the bottom and a lot of holes in these floors, so be very careful when walking around (I recommend sneaking). Up to three chests can spawn on every floor (I think), but usually only 2-3 chests spawn across all four floors. These chests have a special loot table and contain about 17% more netherite on average than generic bastion chests (in the form of ancient debris and netherite scraps). The parts with the chests can be recognized by having two lanterns hanging a few blocks apart, on the same axis. A few single gold blocks can spawn in different spots as well, but I haven’t found any way of finding them other than just looking around this area.
-				<br>
-				<h5>Loot</h5>
-
-				<h6>Average roll</h6>
-
-				Gold blocks – 4 (under high rampart) + 10 (gold room) + 1 (stables floors) = 15
-				<br>
-				Chests – 6 generic (3 on high rampart, 2 on mid, 1 on low) + 2 generic (2x1 in fake gold rooms) + 1 generic (middle stairway, guaranteed) + 2 stables chests = 11 (9 generic + 2 stables chests)
-
-				<h6>Low roll</h6>
-
-				Gold blocks – 0
-				<br>
-				Chests – 3 generic (3x1 on low ramparts) + 2 generic (2x1 in fake gold rooms) + 1 generic (middle stairway, guaranteed) = 6 generic
-
-				<h6>High roll</h6>
-
-				Gold blocks – 12 (4x3 under high ramparts) + 24 (2x12 in gold rooms) + 4 (stables floors) = 40
-				<br>
-				Chests – 9 generic (3x3 on high ramparts) + 1 generic (middle stairway, guaranteed) + 10 stables chests = 20 (10 generic + 10 stables chests)
-
-				<h5>Route</h5>
-
-				<h6>Upper parts</h6>
-
-				I recommend starting from the top, since you won’t run into a piglin brute on your way up, which makes using a lava bucket very dangerous. Loot the upper parts of the ramparts, then the lower parts. There are a few piglin brutes in the upper parts that you have to watch out for:
-				<br>
-				High rampart – 2-3 brutes near the chests, easy to shoot from a distance; one can also spawn in the room with four gold blocks (10% chance) – you can mine a staircase down, one block to the right side of the single chest; this will safely bring you to the room with four gold blocks
-				<br>
-				Medium – one brute usually spawns near the lantern chest, very dangerous, use lava to block him; one can also spawn near the chest at the top (10% chance)
-				<br>
-				Low - one brute usually spawns near the chest at the back of the rampart, use blocks and lava to block him
-				<br>
-				<h6>Getting to the lower parts</h6>
-
-				While there usually is a staircase to the lower part located inside a rampart, some combinations have this passage sealed (just to make the navigation even more dreadful). <br>Few things to note:<br>
-
-				a) High rampart connected to the gold room – mine a staircase down, one block to the right side of the lantern
-				<br>
-				b) Medium rampart connected to the gold room – mine a staircase down, on the opposite side of the lantern chest
-				<br>
-				c) Any kind of rampart in the middle – use the staircase on the outside wall
-				<br>
-				<h6>Lower parts</h6>
-
-				Lower parts of the ramparts are relatively safe, although there is a small chance of a piglin brute spawning somewhere, listen to your surroundings. When it comes to the lower part of the middle rampart, one brute usually spawns in a room near the end of the staircase, but it can be easily blocked off.
-				<br>
-				When you go down the middle rampart and arrive at the main stables area, hoglins and falling are a bigger threat than brutes. Move slowly, look under your feet and use your ranged weapon to kill any hoglins or piglins. Check all four “floors” for the parts with two hanging lanterns and loot the chests. You can also find some random gold blocks along the way.
-				<br>
-				<h5>Dangers</h5>
-
-				0-21 piglin brutes (7 on average) that can randomly spawn in different areas that can also randomly spawn. Lots of hoglins. The floor of the main stables area can be made of lava, magma blocks or nethherrack and there are plenty of holes that can spell your doom. One of the most dangerous bastions to loot, mainly due to its unpredictability and narrow corridors in the ramparts.
-
-				<h4 id="Housing">C. Housing Units</h4>
-
-				<h5>Overview</h5>
-
-				Housing Units is a pretty consistent type of bastion, both in layout and loot. You are guaranteed to find at least 16 gold blocks and 6 chests, but the usual amount is not much higher than that. Also, it’s pretty dangerous and tedious to loot, especially when it comes to the main area. While it’s the best bastion for speedrunning, I consider it my least favorite to loot.
-				<br>
-				r/MinecraftTutorials - Housing Units, high-high variant
-				Housing Units, high-high variant
-
-				<h5>Layout</h5>
-
-				Housing Units is quite similar to the Hoglin Stables, but it consists of only two ramparts. The right one (while looking at the front of the chest) always spawns the same way, as the high variant, with 3 gold blocks in the upper part and 9 gold blocks in the lower part.
-				<br>
-				The second rampart can spawn as a high, mid or low variant. For the high variant, there is a standard set of a double chest and a single chest. For the medium variant, there is only a single chest at the top. For the low variant, there are no chests whatsoever. When it comes to the lower section of the left rampart, there are a few gold blocks to mine, but you can grab them along the way, while looting the right rampart.
-				<br>
-				At the bottom of these two ramparts, there is some kind of a courtyard with a chest and a small patch of nether wart in the middle. Around this patch, there are several ruined buildings where chests and gold blocks can appear. Chests are located on the same level as the double chest and one level above it. There is a lantern next to every chest, but it’s usually obstructed by walls and pillars.
-
-				<h5>Loot</h5>
-
-				<h6>Average roll</h6>
-
-				Gold blocks – 12 (high rampart, guaranteed) + 4 (hidden cache, guaranteed) + 1 (wall cache, guaranteed) + 1 (housing area) = 17
-				<br>
-				Chests – 3 generic (on high rampart) + 1 generic (on mid rampart) + 2 generic (middle stairway, guaranteed) + 2 generic (housing area) = 8 generic
-
-				<h6>Low roll</h6>
-
-				Gold blocks – 12 (high rampart, guaranteed) + 4 (hidden cache, guaranteed) + 1 (wall cache, guaranteed) = 16
-				<br>
-				Chests – 3 generic (on high rampart, guaranteed) + 2 generic (middle stairway, guaranteed) + 1 generic (housing area, guaranteed) = 6 generic
-
-				<h6>High roll</h6>
-
-				Gold blocks – 12 (high rampart, guaranteed) + 4 (hidden cache, guaranteed) + 1 (wall cache, guaranteed) + 4 (housing area) = 20
-				<br>
-				Chests – 6 generic (2x3 on high ramparts) + 2 generic (middle stairway, guaranteed) + 7 generic (housing area) = 15 generic
-
-				<h5>Route</h5>
-
-				Like in Hoglin Stables, starting from the top is preferable. Clear the upper parts of the ramparts. It’s pretty easy, since the area is wide open (unless the bastion is buried). Loot the double and single chest set in the right-hand rampart (looking at the front of the chests) and any chests in the high or medium variants of the left-hand rampart (there are no chests in the low variant). Go down the front-left corner of the right-hand rampart.
-				<br>
-				If you go through the passage to the other rampart, you can find a single gold block buried near the wall on the left. Otherwise, carefully block both staircases (a piglin brute might be nearby) and go to the small alcove on the right. Mine one block to the right of the cracked blackstone bricks to arrive at the room with three gold blocks, on the left. Kill all piglins and the brute (you have an advantage in the form of a higher ground), mine the gold and go down the stairs to the room with 9 gold blocks. From the gold pile, you can mine your way to the double chest. If you mine to the right of this tunnel, you will find 4 gold blocks buried in blackstone.
-				<br>
-				In the main housing area, loot the chests, which can be located at the same level as the double chest or one level above it. Lanterns, which are hanging next to the chests, can be useful, if you can spot them. Watch out for piglin brutes, they might be hiding pretty much anywhere. At least there should only be a couple of them.
-
-				<h5>Dangers</h5>
-
-				0-17 piglin brutes (7 on average). The ones in the ramparts are not too dangerous, since they spawn in pretty much the same spots, but the ones in the main housing area are problematic – plenty of hiding spots in the ruins. Even regular piglins can cause some trouble, for the same reason. The courtyard can be made of lava as well. At least the aren’t many places where hoglins can spawn.
-
-				<h4 id="Treasure">D. Treasure Room</h4>
-				<h5>Overview</h5>
-
-				I think Treasure Room was meant to be a “high risk, high reward” bastion variant, but I actually find it to be the easiest variant to loot, even despite the higher number of piglin brutes. Not much variety, but the loot is excellent – huge number of gold blocks and 1-2 chests with unique, high quality loot, mainly in the form of netherite ingots.
-				<br>
-
-				r/MinecraftTutorials - Treasure Room
-				Treasure Room
-
-				<h5>Layout</h5>
-
-				Treasure Room variant is quite easy to recognize, thanks to its rectangular lava pools and a bridge with two gold blocks. This bridge connects one of two almost identical ramparts with a big, rectangular area. The ramparts contain a double chest, two single chests and some gold blocks hidden in walls. The rectangular area is a bit complicated and its parts can spawn a bit differently each time, but basically there are walkways along the walls, a bridge with a magma cube spawner at the bottom and a big pile of gold with 1-2 chests with high quality loot. On the walkways, there are two “floors” where some generic chests can spawn – one not far below the entrance and one at the very bottom. I think up to four chests can spawn on each floor, but I’ve encountered the maximum of three.
-				<br>
-				The bottom part with gold and chests can spawn in four distinct variants:
-				<br>
-
-				a) Two gold piles (13 blocks) and a single chest
-				<br>
-				r/MinecraftTutorials - Bastion Looting Guide (1.16.2+)
-				<br>
-				b) Blackstone cage with 16 gold blocks and a single chest
-				<br>
-				r/MinecraftTutorials - Bastion Looting Guide (1.16.2+)
-				<br>
-				c) Gold “snake” (19 blocks) and a single chest
-				<br>
-				r/MinecraftTutorials - Bastion Looting Guide (1.16.2+)
-				<br>
-				d) 12 gold blocks and two chests
-				<br>
-				r/MinecraftTutorials - Bastion Looting Guide (1.16.2+)
-				<br>
-				The chests in this area have a unique loot table with a solid chance for some netherite, even in the form of netherite ingots (on average, there are 0,5 netherite ingots, 0,267 ancient debris and 0,267 netherite scraps per chest). I’ve been able to find two ingots and two pieces of ancient debris in one chest, but I’ve also encountered chests with only nether quartz and some diamond gear.
-
-				<h5>Loot</h5>
-
-				<h6>Average roll</h6>
-
-				Gold blocks – 6 (2x3 in upper rampart rooms) + 2 (2x1 in rampart chest rooms, guaranteed) + 2 (main bridge, guaranteed) + 13 (double pile cache) = 23
-				<br>
-				Chests – 4 generic (2x2 in rampart chest rooms, guaranteed) + 3 generic (in the main area) + 1 treasure chest = 8 (7 generic + 1 treasure chest)
-
-				<h6>Low roll</h6>
-
-				Gold blocks – 2 (2x1 in rampart chest rooms, guaranteed) + 2 (main bridge, guaranteed) + 12 (double treasure cache) = 16
-				<br>
-				Chests – 4 generic (2x2 in rampart chest rooms, guaranteed) + 1 treasure chest = 5 (4 generic + 1 treasure chest)
-
-				<h6>High roll</h6>
-
-				Gold blocks – 12 (2x6 in upper rampart rooms) + 2 (2x1 in rampart chest rooms, guaranteed) + 2 (main bridge, guaranteed) + 19 (gold snake cache) = 35
-				<br>
-				Chests – 4 generic (2x2 in rampart chest rooms, guaranteed) + 6 generic (in the main area) + 2 treasure chests (double treasure cache) = 12 (10 generic + 2 treasure chests)
-
-				<h5>Route</h5>
-
-				I highly recommend starting from the back of the ramparts. Look for a lowest single gold block in a wall (on the left side of a rampart). Mine it and mine through the wall, one block above it. You should see a room with chests. Use your lava bucket to kill any nearby piglin brutes. After that, you can enter the room and loot the chests.
-				<br>
-				Alternatively, you can pillar up near the bridge connecting one of the ramparts with the big rectangular area. Shoot the brutes from a distance and make your way to the cleared rampart. After looting the chests, you can mine one block above the stairs on the right to reveal a single gold block (assuming you haven’t mined it already). If you go up to the floor above, there are up to six gold blocks hidden in the wall – one on the lower right, three in the middle and two on the left side.
-				<br>
-				To get to the other rampart, you can just mine through the wall – if you are in a room with two chests, mine through the right wall (looking at the bridge with two gold blocks). If you are in a room with a double chest, mine the left wall (looking at the bridge). Use your lava bucket, if there are any piglin brutes in the other rampart. Loot the chests, get the gold block above the stairs and mine the gold blocks on the floor above. After that, both ramparts can be considered looted.
-				<br>
-				Go down the stairs of the rampart with two single chests. Along the way, shoot piglin brutes guarding the main bridge. Mine two gold blocks on this bridge and enter the big, rectangular area. I recommend bridging out on some blocks that are easy to spot (netherrack is fine) and placing a torch at the end. Try to shoot as many piglins from this spot as possible. Focus on piglin brutes on the bridge below and near the pile of gold.
-				<br>
-				If you can still hear piglin brutes nearby, they’ve probably fallen through the hole in the floor. Go down the stairs near the entrance and turn around. You can kill any trapped brutes with a lava bucket.
-				<br>
-				Go one floor down. You can use a hole in the floor, but be careful not to use one that has another hole below. This is the walkway where some chest can spawn in the corners. Travel along the bastion’s wall and loot them. Look at the bridge below from different spots and make sure that it’s safe.
-				<br>
-				Make your way to this bridge. The safest way is to just jump down, but it can hurt quite a bit. You can use some blocks for a gradual descent, but be careful to avoid the walkways, as piglin brutes frequently patrol them and they are difficult to spot from above.
-				<br>
-				Once you are on a bridge, go to the side with no stairs. There is a magma cube spawner below and it’s advisable to break it. After that, either shoot any brutes from the bridge (quite tough to do) or go on some sort of catwalk that is slightly above the bridge and use a lava bucket to kill piglins from above. Similar to the walkway near the entrance, travel along the wall and loot the chests in the corners. Mind the holes in the floor, as there are some that can contain trapped piglin brutes.
-				<br>
-				Now it’s time for the bastion’s “meat”. Make your way to the pile of gold in the middle, killing any magma cubes along the way. Cover any holes in the floor, mine the gold blocks and loot the special Treasure Room chest(s).
-				<br>
-				The Treasure Room bastion can be considered looted at this point. To make your way back, either pillar up or launch yourself with elytra and a firework rocket, aiming for the bridge you made near the entrance.
-
-				<h5>Danger</h5>
-
-				0-27 piglin brutes, 16 on average. Looks bad, but they are pretty easy to kill with little risk. One of the safest bastions to loot, if you know what you’re doing.
-
-				<h3 id="6">Miscellaneous data</h3>
-				r/MinecraftTutorials - Loot summary
-				<br>
-				<h4>Loot summary</h4>
-				L – Lodestone Chest<br>
-				S – Stables Chest<br>
-				T – Treasure Room Chest<br>
+				<h3 id="3">3. Miscellaneous data</h3>
 
 				Some Y coordinates, helpful in navigating buried bastions:<br>
 				High rampart chests Y=72<br>
@@ -465,11 +177,76 @@
 				Low rampart top Y=63<br>
 				Treasure Room rampart chests Y=82<br>
 				Treasure room main bridge Y=68<br>
+
+				<h3 id="4">4. Bastion types – in-depth descriptions</h3>
+				<h4 id="Ramparts">Ramparts</h4>
+
+				Bridge, Hoglin Stables and Housing Units all contain two or three ramparts, that can spawn in three different variants – high, medium or low. Recognizing them can be difficult if they are buried under the netherrack and you have little idea about what you’re looking at. Just keep in mind that the high variant has a single chest and a double chest next to each other, the medium variant has a small pillar at the front and a squarish basalt pattern and the low variant has something like a line of basalt blocks in the middle.
+				<br>
+
+				<h4 id="Bridge">A. Bridge</h4>
+				<h5>Overview</h5>
+
+				Bridge is a type of bastion that is relatively quick and easy to loot. There is a very low number of chests, but a high number of gold blocks and the main gold pile is in a very accessible and safe spot. There is one chest unique to this bastion. It’s called “lodestone chest”, since it always contains a single lodestone block.
+				<br>
+
+				<h5>Loot</h5>
+				Gold blocks – 16 (gold pile, guaranteed) + 1 (walkway) + 1 (lava cache) + 2 (lava passage) + 2 (lower right rampart) = 22
+				<br>
+				Chests – 3 generic (3 on high rampart) + 1 generic (on mid rampart) + 1 lodestone chest (guaranteed) = 5 (4 generic + 1 lodestone chest)
+
+				<h5>Lower right rampart (1-3 gold blocks)</h5>
+
+				Go to the right rampart, jump down its upper-left side and travel all the way down. Pass one lantern and go down the spiral path below the second lantern. There is a room with some chiseled blackstone with 1-3 gold blocks behind them.
+
+				<h5>Lava cache (0-3 gold blocks)</h5>
+
+				Go to the upper part of the main bridge, the end without the gold pile. Face the bastion and look to your left. There is some chiseled blackstone and up to 3 gold blocks behind the lava. Mining it is a bit tough, you should place some blocks around the gold beforehand, so it won’t burn in the lava.
+
+				<h5>Lava passage (0-2 gold blocks)</h5>
+
+				Jump to the lower part of the main bridge. Look for a small lava waterfall (one block wide) and block it. This will reveal a secret passage. Go three blocks down (you should have blackstone bricks at your head level and blackstone blocks at your legs level) and mine through the wall on your left. You should quickly encounter up to 2 gold blocks with some chiseled blackstone around them.
+
+				<h4 id="Stables">B. Hoglin Stables</h4>
+				<h5>Overview</h5>
+
+				Hoglin Stables is the most varied bastion type. There are quite a lot of different possibilities in the spawning of its parts. The reward can be either amazing or absolute garbage. Also, if this bastion happens to be completely buried under the netherrack, navigation is going to be a nightmare.
+				<br>
+
+				<h5>Loot</h5>
+
+				Gold blocks – 4 (under high rampart) + 10 (gold room) + 1 (stables floors) = 15
+				<br>
+				Chests – 6 generic (3 on high rampart, 2 on mid, 1 on low) + 2 generic (2x1 in fake gold rooms) + 1 generic (middle stairway, guaranteed) + 2 stables chests = 11 (9 generic + 2 stables chests)
+
+				<h4 id="Housing">C. Housing Units</h4>
+
+				<h5>Overview</h5>
+
+				Housing Units is a pretty consistent type of bastion, both in layout and loot. You are guaranteed to find at least 16 gold blocks and 6 chests, but the usual amount is not much higher than that. Also, it’s pretty dangerous and tedious to loot, especially when it comes to the main area.<br>
+
+				<h5>Loot</h5>
+
+				Gold blocks – 12 (high rampart, guaranteed) + 4 (hidden cache, guaranteed) + 1 (wall cache, guaranteed) + 1 (housing area) = 17
+				<br>
+				Chests – 3 generic (on high rampart) + 1 generic (on mid rampart) + 2 generic (middle stairway, guaranteed) + 2 generic (housing area) = 8 generic
+
+				<h4 id="Treasure">D. Treasure Room</h4>
+				<h5>Overview</h5>
+
+				The loot is excellent – huge number of gold blocks and 1-2 chests with unique, high quality loot, mainly in the form of netherite ingots.
+				<br>
+
+				<h5>Loot</h5>
+
+				Gold blocks – 6 (2x3 in upper rampart rooms) + 2 (2x1 in rampart chest rooms, guaranteed) + 2 (main bridge, guaranteed) + 13 (double pile cache) = 23
+				<br>
+				Chests – 4 generic (2x2 in rampart chest rooms, guaranteed) + 3 generic (in the main area) + 1 treasure chest = 8 (7 generic + 1 treasure chest)
 				</p>
 			</div>
 			<hr>
 			<div id="End">
-				<h1>End</h1>
+				<h1 class="center">End</h1>
 				<nav>
 					<a href="#Stronghold">Stronghold</a>
 					<a href="#Dragon">Dragon Path</a>
@@ -477,11 +254,15 @@
 				</nav>
 
 				<h2 id="Stronghold">Stronghold</h2>
+				<div class="center"><img src="./ressources/stronghold_map.png"></div>
 				<p>Stronghold portal room is 5 rooms away the entrance (the 5 blocks down spiral staircase)</p>
 
 				<h2 id="Dragon">Dragon Path</h2>
+
+				<div class="center"><img src="./ressources/dragon_path.png"></div>
 				<p>Shortest path : dragon spawns y=128 travel to node 1 then node 2 and then perch <br>
 				Leave a node 30 blocks above or less</p>
+
 				<h2 id="Cities">End Cities</h2>
 				<p>End cities usually generate in flat areas, in "midlands" or "highlands" biomes, which are found on larger islands. One may find several cities clustered together, or travel for thousands of blocks before finding one. Unlike other structures, End cities are generated in a noticeable grid. They are located only in chunks numbered 0-8 ± a multiple of 20. 
 				<br>
@@ -495,8 +276,10 @@
 				<ul>
 					<li>2 Minute Bastion Guides by T_Wagz</li>
 					<li>Bastion Guides by u/zolsticezolstice</li>
-					<li>Minecraft Wiki</li>
 					<li>u/toomuchinvigilation</li>
+					<li>Minecraft Wiki</li>
+					<li>https://minecraft.fandom.com/</li>
+					<li>https://minecraft.wiki/</li>
 				</ul>
 			</footer>
 		</div>
